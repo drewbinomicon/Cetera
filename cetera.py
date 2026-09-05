@@ -5,7 +5,7 @@
 #  or C# of Rust or Node.JS or a million other languages.
 #
 # Copyright (C) 2023 Andrew D. Harris <andrew2325@gmail.com>.
-# Gemini was used to create this frontend to ect.  I am nnnnnot a software engineer!
+# Gemini was used to create this frontend to ect.  I am not a software engineer!
 # This program is free software: you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
 #  the Free Software Foundation, either version 3 of the License, or
