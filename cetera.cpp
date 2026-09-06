@@ -1,5 +1,5 @@
 /*
-* Copyright (C) 2026 [Your Name or Organization]
+* Copyright (C) 2026 Andrew D. Harris <andrew2325@gnail.com>
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
