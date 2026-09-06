@@ -60,13 +60,12 @@ void CollectFiles(const std::string &dir, std::vector<std::string> &files) {
             if (S_ISDIR(st.st_mode)) {
                 CollectFiles(fullpath, files);
             } else if (S_ISREG(st.st_mode)) {
-                if (name.length() >= 4) {
-                    std::string ext = name.substr(name.length() - 4);
+                size_t dot_pos = name.find_last_of('.');
+                if (dot_pos != std::string::npos) {
+                    std::string ext = name.substr(dot_pos);
                     for (auto &c : ext) c = tolower(c);
-                    std::string ext5 = (name.length() >= 5) ? name.substr(name.length() - 5) : "";
-                    for (auto &c : ext5) c = tolower(c);
                     
-                    if (ext == ".png" || ext == ".jpg" || ext == ".zip" || ext == ".gz" || ext5 == ".jpeg") {
+                    if (ext == ".png" || ext == ".jpg" || ext == ".zip" || ext == ".gz" || ext == ".jpeg") {
                         files.push_back(fullpath);
                     }
                 }
